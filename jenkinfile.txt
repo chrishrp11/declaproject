@@ -39,4 +39,11 @@ deploy adapters: [tomcat9(credentialsId: '780060ad-27df-4260-aa04-1198a540ff50',
 }
 }
 }
+post
+{
+failure
+{
+mail bcc: '', body: 'project faild', cc: 'krishna.rp@gmail.com', from: '', replyTo: '', subject: 'project faild', to: 'krishna.rp@gmail.com'
+}
+}
 }
